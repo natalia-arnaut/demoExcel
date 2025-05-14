@@ -5,9 +5,6 @@ use Model\AllStats;
 use Model\QuestionStats;
 use Model\StudentStats;
 
-/**
- * Calculates the compensations for each month of the current year
- */
 class ScoreStatsCalculator
 {
     /**

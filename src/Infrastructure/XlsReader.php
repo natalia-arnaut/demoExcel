@@ -1,12 +1,10 @@
 <?php
 namespace Infrastructure;
 
-use JetBrains\PhpStorm\NoReturn;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 class XlsReader
 {
-    #[NoReturn]
     public function read(string $inputFileName): array
     {
         $inputFileType = 'Xlsx';
@@ -22,7 +20,7 @@ class XlsReader
 
             $sheetName = $worksheet['worksheetName'];
 
-            echo "<h4>$sheetName</h4>";
+//            echo "<h4>$sheetName</h4>";
             /**  Load $inputFileName to a Spreadsheet Object  **/
             $reader->setLoadSheetsOnly($sheetName);
             $spreadsheet = $reader->load($inputFileName);

@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/imports.php';
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 use Application\ScoreStatsCalculator;
 use Infrastructure\Controller;

@@ -6,7 +6,6 @@ use Model\AllStats;
 
 class StatsBuilder
 {
-    #[NoReturn]
     public function build(
         AllStats $data
     ): array {

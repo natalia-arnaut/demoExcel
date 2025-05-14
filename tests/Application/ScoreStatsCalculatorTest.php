@@ -2,11 +2,8 @@
 namespace test\Application;
 
 use Application\ScoreStatsCalculator;
-use Model\AllStats;
-use Model\QuestionStats;
+use Model\StudentStats;
 use PHPUnit\Framework\TestCase;
-
-require_once dirname(dirname(__DIR__)) . '/src/imports.php';
 
 class ScoreStatsCalculatorTest extends TestCase
 {
@@ -22,11 +19,13 @@ class ScoreStatsCalculatorTest extends TestCase
      *
      */
     public function testCalculate(
-        $data, AllStats $expectedStats
+//        $data, AllStats $expectedStats
     ) {
-        $stats = $this->calculator->calculate($data[0], $data[1], $data[2]);
+//        $stats = $this->calculator->calculate($data[0], $data[1], $data[2]);
 
-//        $this->assertSame();
+        $student1 = new StudentStats("student", 1.2);
+        $student2 = new StudentStats("student 2", 1.2);
+        $this->assertEquals($student1, $student2);
     }
 
     protected function inputDataProvider(): array

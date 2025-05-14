@@ -1,4 +1,11 @@
 {
+  "autoload": {
+    "psr-4": {
+      "Application\\": "src/Application/",
+      "Infrastructure\\": "src/Infrastructure/",
+      "Model\\": "src/Model/"
+    }
+  },
   "require": {
     "phpoffice/phpspreadsheet": "^4.2.0"
   },
